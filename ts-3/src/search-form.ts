@@ -95,18 +95,15 @@ export function renderSearchFormBlock (checkin: Date, checkout?: Date) : void {
   const checkinElement = document.getElementById('check-in-date')
   const checkoutElement = document.getElementById('check-out-date')
   const priceElement = document.getElementById('max-price')
-
-
-  // Здесь выдает ошибку, что value не существует в event.target
   
   checkinElement.addEventListener('change',function(event){
-    checkinElement.setAttribute('value',event.target.value);
+    checkinElement.setAttribute('value', (event.target as HTMLInputElement).value);
   });
   checkoutElement.addEventListener('change',function(event){
-    checkoutElement.setAttribute('value',event.target.value);
+    checkoutElement.setAttribute('value', (event.target as HTMLInputElement).value);
   });
   priceElement.addEventListener('change', function (event) {
-    priceElement.setAttribute('value', event.target.value)
+    priceElement.setAttribute('value', (event.target as HTMLInputElement).value)
   })
 
   form.addEventListener('submit', (event) => {
