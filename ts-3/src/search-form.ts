@@ -96,6 +96,7 @@ export function renderSearchFormBlock (checkin: Date, checkout?: Date) : void {
   const checkoutElement = document.getElementById('check-out-date')
   const priceElement = document.getElementById('max-price')
   
+  // Исправил
   checkinElement.addEventListener('change',function(event){
     checkinElement.setAttribute('value', (event.target as HTMLInputElement).value);
   });

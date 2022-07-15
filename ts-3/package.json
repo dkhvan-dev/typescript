@@ -1,8 +1,8 @@
 {
   "name": "ts-3",
   "version": "1.0.0",
-   "keywords": [
-    "typescript"
+  "keywords": [
+    "typescript"  
   ],
   "author": "Denis Khvan",
   "license": "ISC","description": "TS Geekbrains",
@@ -13,7 +13,6 @@
     "start": "http-server -p 3000",
     "lint": "eslint src --ext .js --ext .ts",
     "lint-fix": "eslint src --ext .js --ext .ts --fix"
-
   },
 
   "devDependencies": {
